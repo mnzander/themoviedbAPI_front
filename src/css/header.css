@@ -1,0 +1,118 @@
+.backgroundheader {
+    background-color: #1a1d24;
+    width: 100%;
+    height: 90px;
+    position: sticky; /* Baja el HEADER al hacer Scroll*/
+    top: 0; /* Para que se quede arriba del todo */
+    z-index: 10; 
+}
+
+.header-container {
+    display: flex; /*El contenedor se comporta como un bloque, ocupa todo el espacio horizontal disponible */
+    align-items: center; /* Agrupa los elementos alrededor del centro */
+    justify-content: space-between; /* Los items flex se distribuyen uniformemente sobre la línea */
+    block-size: 90px; /* Lo mismo que height. */
+    padding-inline: 50px; /* Los elementos del HEADER dejan un margen interior (start y end) de 50px*/
+    background-color: #1a1d24;
+}
+
+.header-container .logo:hover{
+    cursor: pointer;
+}
+
+.header-container .nav ul { /* UL del MENU y TOOLS */
+    display: flex; /* El contenedor se comporta como un bloque, ocupa todo el espacio horizontal disponible */
+    align-items: center; /* Agrupa los elementos alrededor del centro */
+    color: #ffffff; /* Color Blanco */
+}
+
+.header-container .nav ul.menu { /* UL del MENU */
+    display: flex; /* El contenedor se comporta como un bloque, ocupa todo el espacio horizontal disponible */
+    align-items: center; /* Agrupa los elementos alrededor del centro */
+    gap: 25px; /* Separa los elementos del MENU 25px */
+}
+
+.header-container .nav .menu .item{
+    font-size: 14px; /* Texto en 14px */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Todo en mayusculas */
+    border-bottom: 2px solid transparent; /* Para que NO suba el texto con el HOVER */
+}
+
+.header-container .nav .menu .item::after{
+    margin-left: 30px;
+    content: '/';
+    font-size: 15px; 
+    color: #737373;
+}
+
+.header-container .nav .menu .item:last-child::after {
+    content: none;
+}
+
+.header-container .nav .menu .item a:hover {
+    cursor: pointer; /*Al poner el cursor sale el pointer*/
+    padding-block-end: 5px;
+    border-bottom: 2px solid #e0011a; /* Pone un borde de 2px debajo */
+}
+
+.header-container .tools { /* Tools (Lupa, Separador y SOCIAL) */
+    display: flex; /* El contenedor se comporta como un bloque, ocupa todo el espacio horizontal disponible */
+    align-items: center; /* Agrupa los elementos alrededor del centro */
+    gap: 40px; /* Separa los elementos (Lupa, Separador y Redes) con 40px entre ellos */
+}
+
+.header-container .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container .search:hover{
+    cursor: pointer;
+}
+
+.header-container .search::after {
+    content: "";
+    background-color: #737373;
+    height: 18px;
+    width: 1px;
+    margin-left: 30px;
+}
+
+.header-container .nav ul.social { /* UL de SOCIAL */
+    gap: 15px; /* Separa los elementos de TOOLS 15px */
+}
+
+.header-container svg { /* Todos los ICONOS del HEADER */
+    inline-size: 18px;  /* Lo mismo que width */
+    block-size: 18px; /* Lo mismo que height */
+    fill: #ffffff;
+    
+    &:hover {
+      cursor: pointer;
+      height: 23px;
+      width: 23px;
+    }
+}
+
+.header-container svg:hover {
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+
+.header-container .tw:hover{
+    fill:rgb(6, 226, 255);
+}
+
+.header-container .fb:hover{
+    fill:rgb(0, 85, 165);
+}
+
+.header-container .ig:hover{
+    fill: #ce2e92;
+}
+
+.header-container .yt:hover{
+    fill: rgb(255, 0, 0);
+}

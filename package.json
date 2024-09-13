@@ -1,0 +1,16 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "main": "data.js",
+  "scripts": {
+    "dev": "vite --host localhost --port 8080",
+    "build": "tsc && vite build",
+    "test": "echo \"No hay pruebas especificadas\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^5.2.13"
+  }
+}

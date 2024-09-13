@@ -1,0 +1,89 @@
+.list-container {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 100px
+}
+
+.film-row {
+    display:flex;
+    align-items: center;
+    height: 8em;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.film-row-titles {
+    display:flex;
+    align-items: center;
+    height: 4em;
+    border: transparent;
+
+    & .title-year {
+        text-decoration: none;  
+    }
+}
+
+.film-number {
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 7em;
+}
+
+.poster-container {
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+}
+
+.poster-mini {
+    height: 95px;
+    width: 65px;    
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.title-year{
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    width: 30em;
+}
+
+.avg-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 10em;
+}
+
+.starStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 10em;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 8em;
+}
+
+.your-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 10em;
+}

@@ -1,0 +1,215 @@
+.footer {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    background-color: #1a1d24;
+    width: 100%;
+    height: 470px;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    
+        .logotipo img {
+            margin-bottom: 25px;
+        }
+
+        .logotipo .copy {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #a8a8a8;
+
+            span:hover{
+                color: #ffffff;
+            }
+        }
+
+        .movies h3{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .movies h3::after{
+            margin-left: 20px;
+            content:"";
+            width: 30px;
+            height: 1px;
+            background-color: #e0041d;
+        }
+
+        .movies .lista {
+            display: flex;
+            flex-direction: column;
+            color: #a8a8a8;
+            gap: 20px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .movies .lista li:hover {
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+            transition: 0.1s ease;
+        }
+
+        .additional h3{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .additional h3::after{
+            margin-left: 20px;
+            content:"";
+            width: 30px;
+            height: 1px;
+            background-color: #e0041d;
+        }
+
+        .additional .lista {
+            display: flex;
+            flex-direction: column;
+            color: #a8a8a8;
+            gap: 20px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .additional .lista li:hover {
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+            transition: 0.1s ease;
+        }
+
+        .newsletter{
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                letter-spacing: 1px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #ffffff;
+                margin-bottom: 20px;
+
+                &::after{
+                    margin-left: 20px;
+                    content:"";
+                    width: 30px;
+                    height: 1px;
+                    background-color: #e0041d;
+                }
+            }
+
+            .form{
+                display: inline-block;
+                margin-bottom: 40px;
+                position: relative;
+
+                .email {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: 13px;
+                    color: #ffffff;
+                    padding: 20px 0px;
+                    width: 270px;
+                    border-bottom: 3px solid #ffffff56;
+
+                    &:focus {
+                        border-bottom: 3px solid #ffffff;   
+                    }
+                }
+
+                .boton {
+                    display: flex;
+                    justify-content: end;
+                    margin-top: -40px;
+                    right:0;
+                    position: absolute;
+
+                    svg:hover{
+                        cursor: pointer;
+                        fill:#e0041d;
+                    }
+                }
+            }
+            
+            .social .socialmedia .lista {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+
+                .item{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+
+
+                .tw{
+                    background: rgb(0, 183, 255);
+                }
+
+                .fb{
+                    background: rgb(0, 85, 165);
+                }
+
+                .ig{
+                    background: conic-gradient(
+                        from 240deg,
+                        #f09433,
+                        #e6683c,
+                        #dc2743,
+                        #cc2366,
+                        #bc1888,
+                        #e1306c,
+                        #fd1d1d,
+                        #f56040,
+                        #f77737,
+                        #fcaf45 370deg,
+                        #ffdc80 370deg,
+                        #f09433 370deg
+                    );
+                }
+
+                .yt{
+                    background: rgb(255, 0, 0);
+                }
+
+                .item a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    text-decoration: none; /* Elimina el subrayado de los enlaces */
+                } 
+            }
+        }
+    }
+}
+

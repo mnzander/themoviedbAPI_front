@@ -1,0 +1,83 @@
+main {
+    margin: 0;
+    font-size: 14px;
+    color: #c0c0c0;
+  }
+
+  .movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    min-height: 100vh;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  .movie {
+    display:flex;
+    flex-direction:column;
+    width: 280px;
+    margin-bottom: 10px;
+    align-self: stretch;
+  }
+  
+  .movie-poster {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    height: 1.5em; /* Limita la altura para evitar desbordes */
+    overflow: hidden; /* Oculta el desbordamiento del texto */
+    text-overflow: ellipsis; /* Añade puntos suspensivos al texto truncado */
+    white-space: nowrap; /* Evita que el texto se envuelva */
+  }
+  
+  .movie-data{
+   font-size: 1em;
+   margin-bottom: 10px;
+  }
+  
+  .movie-description{
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.4;
+  }
+  
+  .movie-description-summary{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+  }
+  
+  .movie-other {
+    line-height: 1.4;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .movie-other:last-child {
+    border: none;
+  }
+  
+  .movie-other span {
+    font-weight: bold;
+    padding-right: 5px;
+  }
+
+  .movie-data-hide {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: right;
+  }

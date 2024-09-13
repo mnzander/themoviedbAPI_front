@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #070C12;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.layout-box { /* Encajonar la caja */
+    max-inline-size: 1280px; /* Por la resolución */
+    margin-inline: auto; /* Cemtra el contenido en esos 1280px que hemos especificado*/
+}
